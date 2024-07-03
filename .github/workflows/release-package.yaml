@@ -1,0 +1,29 @@
+name: Release Package
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          registry-url: https://npm.pkg.github.com/
+      - name: Install pnpm
+        run: npm i -g pnpm
+      - name: Install packages
+        run: pnpm i
+      - name: Build package
+        run: pnpm run build
+      - name: Publish package to Github Packages
+        run: pnpm publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

@@ -1,0 +1,21 @@
+{
+  "name": "@roblox-open-cloud/open-cloud",
+  "author": "roblox-open-cloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/lib/index.js",
+  "type": "module",
+  "imports": {
+    "#lib/*": "./dist/lib/*.js"
+  },
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@roblox-open-cloud/api-types": "^0.1.1",
+    "@types/node": "^20.14.9",
+    "typescript": "^5.4.5"
+  }
+}

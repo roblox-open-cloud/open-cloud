@@ -1,0 +1,21 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "allowArbitraryExtensions": false,
+        "esModuleInterop": true,
+        "declaration": true,
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "resolveJsonModule": true,
+        "rootDir": ".",
+        "outDir": "dist",
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "paths": {
+            "#lib/*": ["../dist/lib/"]
+        }
+    }
+}

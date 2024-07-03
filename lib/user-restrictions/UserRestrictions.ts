@@ -47,7 +47,6 @@ export default class UserRestrictions {
      */
     public async updateUserRestriction(universeId: string, restrictedUserId: string, gameJoinRestriction: Partial<GameJoinRestrictionDetails>): Promise<UserRestrictionDetails | UserRestrictionResourceError> {
         const url = new URL(`/cloud/v2/universes/${universeId}/user-restrictions/${restrictedUserId}`, 'https://apis.roblox.com');
-        // url.searchParams.set('updateMask', Object.keys(gameJoinRestriction).map((v) => `gameJoinRestriction.${v}`).join(','));
 
         if (gameJoinRestriction?.privateReason?.length > 1000) {
             throw new Error('Private reason is longer than the maximum allowes length, 1000.');

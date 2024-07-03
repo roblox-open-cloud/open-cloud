@@ -15,7 +15,7 @@
         "target": "ESNext",
         "useDefineForClassFields": true,
         "paths": {
-            "#lib/*": ["./dist/lib/"]
+            "#lib/*": ["../dist/lib/"]
         }
     }
 }

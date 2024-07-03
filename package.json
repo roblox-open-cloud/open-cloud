@@ -9,7 +9,7 @@
     "#lib/*": "./dist/lib/*.js"
   },
   "scripts": {
-    "build": "tsc -b"
+    "build": "tsc"
   },
   "keywords": [],
   "license": "ISC",

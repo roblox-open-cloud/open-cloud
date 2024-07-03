@@ -11,11 +11,11 @@
         "moduleResolution": "Bundler",
         "resolveJsonModule": true,
         "rootDir": ".",
-        "outDir": "dist",
+        "outDir": "./dist",
         "target": "ESNext",
         "useDefineForClassFields": true,
         "paths": {
-            "#lib/*": ["../dist/lib/"]
+            "#lib/*": ["./dist/lib/"]
         }
     }
 }

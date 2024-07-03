@@ -1,7 +1,7 @@
 {
   "name": "@roblox-open-cloud/open-cloud",
   "author": "roblox-open-cloud",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "./dist/index.js",
   "type": "module",

@@ -1,7 +1,7 @@
 {
   "name": "@roblox-open-cloud/open-cloud",
   "author": "roblox-open-cloud",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "./dist/lib/index.js",
   "type": "module",
@@ -11,7 +11,14 @@
   "scripts": {
     "build": "tsc"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roblox-open-cloud/open-cloud.git"
+  },
+  "keywords": [
+    "roblox",
+    "typescript"
+  ],
   "license": "ISC",
   "devDependencies": {
     "@roblox-open-cloud/api-types": "^0.1.1",
